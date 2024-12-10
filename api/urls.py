@@ -5,6 +5,7 @@ from api import views
 router = routers.DefaultRouter()
 
 router.register(r'Programmers', views.ProgrammerViewSet)
+router.register(r'Aprendiz', views.AprendizViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
